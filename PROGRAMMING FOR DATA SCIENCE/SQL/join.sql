@@ -29,6 +29,12 @@ SELECT l.description AS left, r.description AS right
   JOIN right AS r ON l.id = r.id
   ;
 
+-- ON clause tells the condition under which they join
+-- LEFT JOIN all the left table even where condition is not met
+-- The rest of the values all filled with NULL
+-- RIGHT JOIN simiarly with the all the righ table elements
+
+
 -- restore database
 DROP TABLE left;
 DROP TABLE right;
